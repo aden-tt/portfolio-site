@@ -381,6 +381,12 @@ section h2{
   background: var(--placeholder);
 }
 
+.card-thumb img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--placeholder);
+}
+
 .card-body h3{
   font-family: var(--font-display);
   font-size: 1rem;
