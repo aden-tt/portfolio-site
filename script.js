@@ -23,7 +23,7 @@ class SiteHeader extends HTMLElement {
           
           <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
           <nav class="main-nav">
-              <a href="index.html" class="dropdown-toggle">Works</a>
+              <a href="index.html#tools" class="dropdown-toggle">Portfolio</a>
               <a href="AdenThompson_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>            
               <a href="about.html">About</a>
               <a href="#">Contact</a>

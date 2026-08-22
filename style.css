@@ -25,6 +25,23 @@
   
   --maxw: 1120px;
 }
+
+/* ---------------------------------------------------
+   Page Load Fade-In Animation
+--------------------------------------------------- */
+main {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* ---------------------------------------------------
    Header Dropdown Menu
 --------------------------------------------------- */
@@ -93,6 +110,19 @@
   border: 1px solid var(--border-soft);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+/* ---------------------------------------------------
+   Card Tools Text
+--------------------------------------------------- */
+.card-tools {
+  margin-top: auto;
+  padding-top: 10px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.02em;
 }
 
 /* ---------------------------------------------------
@@ -247,10 +277,15 @@ nav.main-nav a.active{
    Hero
 --------------------------------------------------- */
 .hero-image{
-  width: 100%;
+  width: 85%;
   aspect-ratio: 16 / 9;
   background: linear-gradient(160deg, var(--placeholder), var(--placeholder-2));
   border-radius: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
 }
 
 .hero-image.small{
@@ -261,7 +296,7 @@ nav.main-nav a.active{
    Section headings
 --------------------------------------------------- */
 section{
-  padding-top: 56px;
+  padding-top: 40px;
 }
 
 section h2{
@@ -342,7 +377,7 @@ section h2{
 
 .card-thumb{
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   background: var(--placeholder);
 }
 
@@ -524,7 +559,8 @@ section h2{
 }
 
 .photo-placeholder.main-photo {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
+  border-radius: 30px;
 }
 
 .photo-placeholder img {
