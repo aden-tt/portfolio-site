@@ -334,6 +334,9 @@ section h2{
 .accent-orange{ color: var(--accent-orange); font-weight: 600; }
 .accent-blue{ color: var(--accent-blue); font-weight: 600; }
 
+
+
+
 /* ---------------------------------------------------
    Card grid
 --------------------------------------------------- */
@@ -349,9 +352,7 @@ section h2{
   align-items: stretch; /* Changed from 'center' */
   height: auto;
   background: var(--bg-panel);
-  border: 1px solid var(--border-soft);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
@@ -379,7 +380,7 @@ section h2{
 }
 
 .card-thumb {
-  width: 360px;
+  width: 420px;
   min-width: 240px;
   height: 100%;
   aspect-ratio: 16 / 9;
