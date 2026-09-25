@@ -374,7 +374,6 @@ section h2{
 }
 
 .card:hover {
-  transform: translateY(-3px);
   border-color: var(--border);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
 }
@@ -585,7 +584,6 @@ section h2{
 
 .photo-placeholder.main-photo {
   aspect-ratio: 1;
-  border-radius: 30px;
 }
 
 .photo-placeholder img {
