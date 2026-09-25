@@ -113,8 +113,7 @@ main {
 }
 
 .skill-icon {
-  width: 20px;
-  height: 20px;
+  height: 30px;
   object-fit: contain;
   opacity: 0.8;
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -399,7 +398,7 @@ section h2 {
 
 .card-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   background: var(--placeholder);
   overflow: hidden;
 }
