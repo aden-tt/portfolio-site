@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +13,15 @@
 
 <main class="container">
 
-  <div class="hero-image" role="img" aria-label="Featured project preview"></div>
+  <div class="hero-video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/SPWbgrBE5ik?si=H904xf_SME178CQ7"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
   <p class="hero-subtitle">Tech Art Reel</p>
   <section id="welcome">
     <h2>Welcome!</h2>
@@ -23,9 +29,7 @@
     <p>Currently, I'm a <span class="accent-orange">Technical Art Intern at Limbitless Solutions</span>, building tools and VFX for therapeutic video games for children with disabilties.</p>
     <p id="tools">Outside of work, I am also the <span class="accent-orange">President of Game Dev Knights</span>, where I am leading UCF's 480+ member game development organization!</p>
 
-  </section >
-
-  
+  </section>
 
   <!-- Shaders Section -->
   <section id="shaders">
@@ -33,121 +37,207 @@
     <p class="section-subtitle">Real-time shaders, materials, and particle systems built in UE5</p>
     <div class="card-grid">
       <a class="card" href="/project">
-        <div class="card-thumb"><img src="images/TN_Junkyard.png" alt="Viewmode Tool Thumbnail"></div>        <div class="card-body">
+        <div class="card-thumb"><img src="images/TN_Junkyard.png" alt="Junkyard Thumbnail"></div>
+        <div class="card-body">
           <h3>Junkyard</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit occaecat.</p>
-          <div class="card-tech">
-            <p>Tools: Unreal</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
+
       <a class="card" href="/project">
-        <div class="card-thumb"><img src="images/TN_DiningHall.png" alt="Viewmode Tool Thumbnail"></div>
+        <div class="card-thumb"><img src="images/TN_DiningHall.png" alt="Dining Hall Thumbnail"></div>
         <div class="card-body">
           <h3>Dining Hall VFX</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit occaecat.</p>
-          <div class="card-tech">
-            <p>Tools: Unreal, Substance Designer</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="Substance Designer">
+                <img src="images/icons/substance.svg" alt="Substance Designer" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
 
       <a class="card" href="/project">
-        <div class="card-thumb"><img src="images/TN_MainMenu2.png" alt="Viewmode Tool Thumbnail"></div>        <div class="card-body">
+        <div class="card-thumb"><img src="images/TN_MainMenu2.png" alt="Main Menu Thumbnail"></div>
+        <div class="card-body">
           <h3>Main Menu VFX</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit occaecat.</p>
-          <div class="card-tech">
-            <p>Tools: Unreal, HLSL</p>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="/project">
-        <div class="card-thumb"><img src="images/TN_BOTWShader.jpeg" alt="Viewmode Tool Thumbnail"></div>        <div class="card-body">
-          <h3>Breath of the Wild: Grass Shader Study</h3>
-          <p>Features vertex colors, wind, physics interactivity, and custom LODs</p>
-          <div class="card-tech">
-            <p>Tools: Unreal, Maya, Photoshop</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="HLSL">
+                <img src="images/icons/hlsl.svg" alt="HLSL" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
 
+      <a class="card" href="/project">
+        <div class="card-thumb"><img src="images/TN_BOTWShader.jpeg" alt="Breath of the Wild Shader Thumbnail"></div>
+        <div class="card-body">
+          <h3>Breath of the Wild: Grass Shader Study</h3>
+          <p>Features vertex colors, wind, physics interactivity, and custom LODs</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="Maya">
+                <img src="images/icons/maya.svg" alt="Maya" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="Photoshop">
+                <img src="images/icons/photoshop.svg" alt="Photoshop" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
-  
-<!-- Tools Section -------------------------------->
-  <section >
+
+  <!-- Tools Section -->
+  <section>
     <h2>Tools</h2>
     <p class="section-subtitle">Pipeline automation, editor utilities, and DCC scripting</p>
     <div class="card-grid">
       <a class="card" href="/project">
-        <div class="card-thumb"> </div>
+        <div class="card-thumb"><img src="images/TN_Automi.png" alt="AutoMI Thumbnail"></div>
         <div class="card-body">
           <h3>Auto Rigger</h3>
           <p>This is a plugin for project setups.</p>
-          <div class="card-tech">
-            <p>Tools: Python (PySide6), Maya</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Python">
+                <img src="images/icons/python.svg" alt="Python" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="Maya">
+                <img src="images/icons/maya.svg" alt="Maya" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
 
       <a class="card" href="/project">
-        <div class="card-thumb"></div>        
+        <div class="card-thumb"><img src="images/TN_Automi.png" alt="AutoMI Thumbnail"></div>
         <div class="card-body">
           <h3>USD Asset Preview Generator</h3>
           <p>Automatically generates preview thumbnails and cards for USD assets. Created for ASFW Dev Days 2026.</p>
-          <div class="card-tech">
-            <p>Tools: Python</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Python">
+                <img src="images/icons/python.svg" alt="Python" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
-      
+
       <a class="card" href="/project">
-        <div class="card-thumb"><img src="images/TN_ViewmodeTool.png" alt="Viewmode Tool Thumbnail"></div>        <div class="card-body">
+        <div class="card-thumb"><img src="images/TN_ViewmodeTool.png" alt="Viewmode Tool Thumbnail"></div>
+        <div class="card-body">
           <h3>Viewmode Tool</h3>
           <p>A customizable UI panel that centralizes Unreal performance views and commands.</p>
-          <div class="card-tech">
-            <p>Tools: Unreal, C++</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="C++">
+                <img src="images/icons/cpp.svg" alt="C++" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
+
       <a class="card" href="/project">
-        <div class="card-thumb"><img src="images/TN_Automi.png" alt="AutoMI Thumbnail">  </div>       <div class="card-body">
+        <div class="card-thumb"><img src="images/TN_Automi.png" alt="AutoMI Thumbnail"></div>
+        <div class="card-body">
           <h3>Auto Material Instance Tool</h3>
           <p>Generates material instances using a batch of textures and configurable naming conventions.</p>
-          <div class="card-tech">
-            <p>Tools: Unreal, C++</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="C++">
+                <img src="images/icons/cpp.svg" alt="C++" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
     </div>
   </section>
-  
-    <section >
+
+  <!-- Professional Work Section -->
+  <section>
     <h2>Professional Work</h2>
-      <p class="section-subtitle">Selected work from internships and professional experience</p>
+    <p class="section-subtitle">Selected work from internships and professional experience</p>
+    <div class="card-grid">
       <a class="card" href="/project">
         <div class="card-thumb"><img src="images/TN_BionicBash.png" alt="Bionic Bash Thumbnail"></div>
         <div class="card-body">
           <h3>Super Bionic Bash</h3>
           <p>Showcasing work done on cross-platform shader optimization.</p>
-          <div class="card-tech">
-            <p>Tools: Unreal, C++</p>
+          <div class="card-footer">
+            <div class="card-tech">
+              <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+                <img src="images/icons/unreal.svg" alt="Unreal Engine" class="skill-icon">
+              </span>
+              <span class="skill-icon-wrap" data-tooltip="C++">
+                <img src="images/icons/cpp.svg" alt="C++" class="skill-icon">
+              </span>
+            </div>
+            <span class="card-link">View Project &raquo;</span>
           </div>
         </div>
       </a>
-    </section>
+    </div>
+  </section>
 
-    <section >
+  <!-- Other Section -->
+  <section>
     <h2>Other</h2>
-      <p class="section-subtitle">A look into my traditional art background</p>
+    <p class="section-subtitle">A look into my traditional art background</p>
+    <div class="card-grid">
       <a class="card" href="/project">
-        <div class="card-thumb"> <img src="images/TN_Drawing.png" alt="Drawing Thumbnail"></div>
+        <div class="card-thumb"><img src="images/TN_Drawing.png" alt="Drawing Thumbnail"></div>
         <div class="card-body">
           <h3>Traditional Art</h3>
           <p>Generates material instances using a batch of textures and configurable naming conventions.</p>
+          <div class="card-footer">
+            <div class="card-tech"></div>
+            <span class="card-link">View Project &raquo;</span>
+          </div>
         </div>
       </a>
-    </section>
+    </div>
+  </section>
 
   <section id="skills">
     <h2 style="margin-bottom: 12px">Technical Skills</h2>
@@ -161,8 +251,8 @@
           <li>Editor Utility Widgets, Blueprint Tooling</li>
           <li>Performance profiling &amp; optimization</li>
           <li>Asset management and source control</li>
-	  <li> Gameplay programming / prototyping</li>
-	  <li> VR/AR development (Meta, XREAL) </li>
+          <li>Gameplay programming / prototyping</li>
+          <li>VR/AR development (Meta, XREAL)</li>
         </ul>
       </div>
       <div class="skills-col">
@@ -184,13 +274,12 @@
           <li>C#</li>
           <li>Python (PySide/Qt3)</li>
           <li>JavaScript</li>
-          <li>HLSL & GLSL</li>
+          <li>HLSL &amp; GLSL</li>
           <li>OpenGL</li>
         </ul>
       </div>
     </div>
   </section>
-
 
 </main>
 
