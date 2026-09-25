@@ -458,7 +458,7 @@ footer.global-footer {
   padding-top: 48px;
   padding-bottom: 48px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 40px;
 }
 
@@ -497,6 +497,7 @@ footer.global-footer {
 .footer-nav {
   display: flex;
   flex-direction: column;
+  text-align: right;
   gap: 10px;
 }
 
