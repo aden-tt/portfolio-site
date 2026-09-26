@@ -1,0 +1,133 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junkyard | Aden Thompson</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{% include header.html %}
+
+<main class="container project-page">
+  <!-- Header -->
+  <div class="project-header">
+    <h1 class="project-title">Junkyard</h1>
+    <p class="project-subtitle">Tech art showcase featuring custom Blueprint tools for procedural car and tire stacks, Niagara VFX, and various shaders.</p>
+
+    <div style="padding: 20px 28px 10px" class="skills-grid">
+      <div class="skills-col">
+        <h3>Tools</h3>
+        <div class="card-tech">
+          <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+            <img src="images/icons/UE5.png" alt="Unreal Engine" class="skill-icon">
+          </span>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h3>Time</h3>
+        <p>4 weeks</p>
+      </div>
+      <div class="skills-col">
+            <h3>GitHub Repo</h3>
+            <ul class="project-links">
+            <li>
+              <a href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener noreferrer">
+                View Source Code &raquo;
+              </a>
+            </li>
+            </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Main Hero Media (Video or Banner)
+  <div class="project-hero-media">
+    <img src="images/TN_BOTWShader.jpeg" alt="Project Hero Banner">
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Project Video" allowfullscreen></iframe>
+
+  </div>
+ -->
+
+  <!-- Content Section -->
+  <article class="project-main-content">
+      <div style="margin-bottom: 0px" class="project-hero-media">
+        <video controls autoplay loop muted playsinline>
+          <source src="images/AdenThompson_Junkyard_Showreel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>Junkyard is a technical art project I created to push my skills in Blueprints, Niagara, and custom shaders. I developed two Blueprint tools to efficiently generate car and tire stacks, which significantly reduced the time spent manually placing props. I used Niagara to create a custom fire VFX complete with flames, flickering light, embers, heat distortion, and smoke. I also utilized WPO to animate a Niagara bird flock and drive the swinging crane in the background.</p>
+    </section>
+
+
+    <section class="project-section">
+      <h2>Procedural Car/Tire Stacking Tool</h2>
+      <p>Deep-dive into how you built it. Explain algorithms, node graph setups, code architecture, or HLSL/GLSL logic.</p>
+
+      <!-- Callout / Breakdown Image -->
+      <div class="project-hero-media">
+        <video controls autoplay loop muted playsinline>
+          <source src="images/junkyard-car-stacking-tool-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="project-hero-media">
+        <video controls autoplay loop muted playsinline>
+          <source src="images/junkyard-car-stacking-tool-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Fire & Smoke VFX</h2>
+      <p>Deep-dive into how you built it. Explain algorithms, node graph setups, code architecture, or HLSL/GLSL logic.</p>
+      <div class="project-hero-media">
+        <video controls autoplay loop muted playsinline>
+          <source src="images/junkyardfirevfx.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Crane VFX</h2>
+      <p>Deep-dive into how you built it. Explain algorithms, node graph setups, code architecture, or HLSL/GLSL logic.</p>
+      <div class="project-media-block">
+        <video src="images/junkyardfirevfx.mp4" alt="Technical Diagram or Node Graph">
+        <span class="media-caption">Material Graph breakdown illustrating custom HLSL node logic.</span>
+      </div>
+    </section>
+
+
+    <section class="project-section">
+      <h2>Takeaways</h2>
+      <ul>
+        <li><strong>Feature Name 1:</strong> Detailed breakdown of custom shaders, Niagara particle setups, or editor automation scripts.</li>
+        <li><strong>Feature Name 2:</strong> Performance optimizations applied, such as batching, LOD management, or custom render passes.</li>
+        <li><strong>Feature Name 3:</strong> Pipeline integration and usability improvements for artists or designers.</li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- Right-Aligned Backlink Container -->
+  <div class="back-link-container">
+    <a href="/#shaders" class="back-link">Next Project &raquo;</a>
+  </div>
+
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>
