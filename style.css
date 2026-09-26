@@ -312,8 +312,236 @@ nav.main-nav a.active {
 }
 
 /* ---------------------------------------------------
-   Hero
+   Project Breakdown Page Styles
 --------------------------------------------------- */
+.project-page {
+  padding-top: 32px;
+}
+
+/* Right-align backlink wrapper */
+.back-link-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-orange);
+  transition: transform 0.18s ease;
+}
+
+.back-link:hover {
+  transform: translateX(4px);
+}
+
+/* Sidebar / Project Links Styling */
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-links li {
+  margin-bottom: 8px;
+}
+
+.project-links a {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--accent-orange);
+  transition: color 0.18s ease, transform 0.18s ease;
+  display: inline-block;
+}
+
+.project-links a:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.project-header {
+  margin-bottom: 32px;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 0 0 24px;
+}
+
+/* Meta Data Grid */
+.project-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  padding: 16px 20px;
+  border-radius: 4px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  letter-spacing: 0.05em;
+}
+
+.meta-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+/* Hero Media */
+.project-hero-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--placeholder);
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.project-hero-media img,
+.project-hero-media iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+
+/* Content Layout (Main vs Sidebar) */
+.project-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: start;
+}
+
+.project-section {
+  margin-bottom: 36px;
+}
+
+.project-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.project-section p,
+.project-section li {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.project-section ul {
+  padding-left: 20px;
+}
+
+.project-section li {
+  margin-bottom: 8px;
+}
+
+.project-media-block {
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+.project-media-block img {
+  width: 100%;
+  display: block;
+}
+
+.media-caption {
+  display: block;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  background: #111318;
+  border-top: 1px solid var(--border-soft);
+}
+
+/* Sidebar */
+.project-sidebar {
+  position: sticky;
+  top: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.sidebar-box h3 {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 8px;
+}
+
+.sidebar-links a {
+  font-size: 0.88rem;
+  color: var(--accent-orange);
+  font-weight: 600;
+  transition: color 0.18s ease;
+}
+
+.sidebar-links a:hover {
+  color: var(--text);
+}
+
+/* Responsive layout */
+@media (max-width: 860px) {
+  .project-body-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-sidebar {
+    position: static;
+  }
+}
 /* ---------------------------------------------------
    Hero Banner (Full Width Video/Image Background)
 --------------------------------------------------- */
@@ -345,7 +573,7 @@ nav.main-nav a.active {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(14, 16, 19, 0.5); /* Adjust opacity as needed */
+  background: rgba(14, 16, 19, 0.75); /* Adjust opacity as needed */
   z-index: 2;
 }
 
@@ -446,7 +674,6 @@ section h2 {
   flex-direction: column;
   height: 100%;
   background: var(--bg-panel);
-  border: 1px solid var(--border-soft);
   overflow: hidden;
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
@@ -495,7 +722,7 @@ section h2 {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: calc(1.4em * 2);
+  height: calc(1.5em * 2);
 }
 
 /* ---------------------------------------------------

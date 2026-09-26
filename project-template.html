@@ -1,0 +1,108 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Name | Aden Thompson</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{% include header.html %}
+
+<main class="container project-page">
+  <!-- Header -->
+  <div class="project-header">
+    <h1 class="project-title">Project Title Here</h1>
+    <p class="project-subtitle">Brief one-line summary describing what this tool, shader, or pipeline asset does.</p>
+
+    <div class="skills-grid">
+      <div class="skills-col">
+        <h3>Tools</h3>
+        <div class="card-tech">
+          <span class="skill-icon-wrap" data-tooltip="Unreal Engine">
+            <img src="images/icons/UE5.png" alt="Unreal Engine" class="skill-icon">
+          </span>
+          <span class="skill-icon-wrap" data-tooltip="C++">
+            <img src="images/icons/cpp.png" alt="C++" class="skill-icon">
+          </span>
+          <span class="skill-icon-wrap" data-tooltip="HLSL">
+            <img src="images/icons/hlsl.png" alt="HLSL" class="skill-icon">
+          </span>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h3>Time</h3>
+        <p>12 weeks</p>
+      </div>
+      <div class="skills-col">
+            <h3>GitHub Repo</h3>
+            <ul class="project-links">
+            <li>
+              <a href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener noreferrer">
+                View Source Code &raquo;
+              </a>
+            </li>
+            </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Main Hero Media (Video or Banner)
+  <div class="project-hero-media">
+    <img src="images/TN_BOTWShader.jpeg" alt="Project Hero Banner">
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Project Video" allowfullscreen></iframe>
+
+  </div>
+ -->
+      <div class="project-media-block">
+        <img src="images/TN_ViewmodeTool.png" alt="Technical Diagram or Node Graph">
+      </div>
+
+  <!-- Content Section -->
+  <article class="project-main-content">
+    <section class="project-section">
+      <h2>Overview &amp; Problem Statement</h2>
+      <p>Explain the goal of the project. What problem were you solving? What was the context (e.g., game jam, internship, personal technical study)?</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Key Technical Features</h2>
+      <ul>
+        <li><strong>Feature Name 1:</strong> Detailed breakdown of custom shaders, Niagara particle setups, or editor automation scripts.</li>
+        <li><strong>Feature Name 2:</strong> Performance optimizations applied, such as batching, LOD management, or custom render passes.</li>
+        <li><strong>Feature Name 3:</strong> Pipeline integration and usability improvements for artists or designers.</li>
+      </ul>
+    </section>
+
+    <section class="project-section">
+      <h2>Technical Implementation</h2>
+      <p>Deep-dive into how you built it. Explain algorithms, node graph setups, code architecture, or HLSL/GLSL logic.</p>
+      
+      <!-- Callout / Breakdown Image -->
+      <div class="project-media-block">
+        <img src="images/TN_ViewmodeTool.png" alt="Technical Diagram or Node Graph">
+        <span class="media-caption">Material Graph breakdown illustrating custom HLSL node logic.</span>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Optimization &amp; Results</h2>
+      <p>Provide metrics, draw call savings, frame time improvements, or workflow time saved by using the tool.</p>
+    </section>
+  </article>
+
+  <!-- Right-Aligned Backlink Container -->
+  <div class="back-link-container">
+    <a href="/#shaders" class="back-link">Next Project &raquo;</a>
+  </div>
+
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>
