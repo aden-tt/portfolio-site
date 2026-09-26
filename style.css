@@ -10,7 +10,7 @@
   --bg-header: #000000;
   --placeholder:   #232730;
   --placeholder-2: #191c23;
-  --text:          #f5f6f8;
+  --text: #ffffff;
   --text-muted:    #a0a6b2;
   --text-faint:    #6e7480;
   --accent-green:  #3ee06b;
@@ -573,7 +573,7 @@ nav.main-nav a.active {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(14, 16, 19, 0.75); /* Adjust opacity as needed */
+  background: rgba(14, 16, 19, 0.9); /* Adjust opacity as needed */
   z-index: 2;
 }
 
