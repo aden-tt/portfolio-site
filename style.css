@@ -314,6 +314,63 @@ nav.main-nav a.active {
 /* ---------------------------------------------------
    Hero
 --------------------------------------------------- */
+/* ---------------------------------------------------
+   Hero Banner (Full Width Video/Image Background)
+--------------------------------------------------- */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Background video/image styling */
+.hero-bg-media {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Dark tint overlay for text legibility */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 16, 19, 0.5); /* Adjust opacity as needed */
+  z-index: 2;
+}
+
+/* Text container positioned above background */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: var(--maxw);
+}
+
+.hero-content h1 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 12px;
+}
+
 /* Hero Video Container (keeps 16:9 aspect ratio and 85% width) */
 .hero-video-wrapper {
   width: 85%;
